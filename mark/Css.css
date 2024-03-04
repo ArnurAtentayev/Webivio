@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+*::after,
+::before{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+@font-face{
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Bold.woff") format("woff");
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face{
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Medium.woff") format("woff");
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face{
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.woff") format("woff");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+:root{ /*применяется для всего сайта*/
+    --font-family: "Poppins", sans-serif;
+}
+img{
+    max-width: 100%;
+}
+.list_reset{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.btn_reset{
+    font-family: var(--font-family);
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header{
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.header_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.burger{
+    --offset-horizontal: 11px;/*переменная*/
+    --offset-vertical: 14px;
+    position: relative;
+    padding: var(--offset-vertical) var(--offset);
+    border-radius: 100%;
+    background-color: #F5F6F7;
+    width: 40px;
+    height: 40px;
+}
+.burger_line:nth-child(2){
+    top: calc(var(--offset-vertical) + 6px);
+}
+.burger_line:nth-child(3){
+    top: calc(var(--offset-vertical) + 12px);
+}
+.burger_line{
+    position: absolute;
+    left: 50%;
+    top: var(--offset-vertical);
+    width: calc(100% - (var(--offset-horizontal) * 2));
+    height: 2px;
+    background-color: #000;
+    display: inline-block;
+    transform: translateX(-50%);
+}
+.hero{
+    padding-top: 189px;
+    background-image: url("../image/logo.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero-subtitle{
+    font-size: 14px;
+    line-height: 21px;
+    color: white;
+}
+.hero_title{
+    font-weight: 700px;
+    font-size: 60px;
+    line-height: 74px;
+    color: white;
+}
