@@ -10,6 +10,31 @@ body{
     font-weight: 400;
     margin: 0;
 }
+ul,li{
+    list-style-type:none;
+}
+.link{
+    display: inline-flex;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+    color: #d4d6d4;
+    margin-bottom: 45px;
+    text-decoration: none;
+    transition: color 0,3s;
+}
+.link:hover{
+    color:#FFD723;
+}
+.link svg{
+    width: 15px;
+    height: 15px;
+    transform: translateY('2px');
+}
+.link span{
+    border-bottom: 1px solid currentColor;
+    text-indent: 5px;
+}
 @font-face{
     font-family: "Poppins";
     src: url("../fonts/Poppins-Bold.woff") format("woff");
@@ -95,19 +120,87 @@ img{
 }
 .hero{
     padding-top: 189px;
+    padding-bottom: 100px;
+    min-height: 811px;
     background-image: url("../image/logo.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
+.hero background-image{
+    transform: scaleX('-1');
+}
 .hero-subtitle{
+    display: inline-block;
+    margin: 0;
     font-size: 14px;
     line-height: 21px;
-    color: white;
 }
 .hero_title{
-    font-weight: 700px;
+    margin: 0;
+    font-weight: 700;
     font-size: 60px;
     line-height: 74px;
+}
+.hero_content{
+    max-width: 616px;
     color: white;
+}
+.hero_par{
+    font-size: 16px;
+    line-height: 26px;
+}
+.side_title{
+    margin: 0;
+    font-family: Poppins;
+    line-height: 46px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #4D533C;
+    margin-bottom: 60px;
+}
+.services_title{
+    margin: 0;
+    margin-top: 150px;
+    margin-bottom: 60px;
+    max-width: 606px;
+
+}
+.services_list{
+    display: grid;
+    gap:30px;
+    grid-template-columns: repeat(4, 255px);
+}
+.services_subtitle{
+    margin: 0;
+    margin-bottom: 20px;
+    max-width: 183px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: #4D533C;
+}
+.services-descr{
+    margin: 0;
+    margin-bottom: 56px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    font-style: normal;
+    color: #213842;
+    opacity: 60%;
+    max-width: 194px;/*для равномерной переноски строк, как нам надо*/
+}
+.services-item{
+    display: flex;
+    flex-direction: column;/*для переноса строк*/
+    align-items: flex-start;/*для того, чтобы ссылка была не во всю строку*/
+}
+.services_link{
+    margin-bottom: 0;
+    margin-top: auto;/*для кнопки read more, чтобы были на одном уровне*/
+}
+.footer_top{
+    
 }
