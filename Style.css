@@ -12,6 +12,8 @@ body{
 }
 ul,li{
     list-style-type:none;
+    padding: 0;
+    list-style-type: none;
 }
 .link{
     display: inline-flex;
@@ -227,7 +229,7 @@ img{
 }
 .footer{
     color: white;
-    padding-top: 300px;
+    padding-top: 310px;
     background-image: url("../image/footer-bg.jpg");
     background-position: center;
     background-size: cover;
@@ -237,6 +239,7 @@ img{
     display: flex;
     flex-wrap: wrap;
     border-bottom: 1px solid #5D6544;
+    padding-bottom: 60px;
 }
 .footer_contact_item:not(:last-child){
     margin-right: 128px;
@@ -260,4 +263,89 @@ img{
     font-size: 16px;
     line-height: 40px;
     color: #FFFFFF;
+}
+.footer_middle{
+    --grid-gap: 78px;
+    display: grid;
+    gap: var(--grid-gap);
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 60px;
+}
+.footer_title{
+    margin: 0;
+    margin-bottom: 21px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+.footer_column:last-child{
+    position: relative;
+}
+.footer_column:last-child::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(-1 * (var(--grid-gap)));
+    width: 1px;
+    height: 100%;
+    background-color: #5D6544;
+}
+.footer_link{
+    display: inline-block;
+    text-decoration: none;
+    color: #B6C197;
+    font-size: 16px;
+    line-height: 40px;
+}
+.footer_text{
+    margin: 0;
+    font-size: 16px;
+    line-height: 38px;
+    color:#B6C197;
+    margin-bottom: 23px;
+}
+.footer_mail{
+    display: inline-block;
+    margin-bottom: 33px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+.social_item:not(:last-child){
+    margin-right: 14px;
+}
+.social_link{
+    display: block;
+    width: 33px;
+    height: 33px;
+    background-color: #444A34;
+    border-radius: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    opacity: 0.4;
+}
+.social_link:hover{
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    background-color: #FFD723;
+}
+.social{
+    display: flex;
+    align-items: center;
+}
+.social_link-fb{
+    background-image: url("../SVG/facebook-app-symbol.svg");
+}
+.social_link-tw{
+    background-image: url("../SVG/twitter.svg");
+}
+.social_link-g{
+    background-image: url("../SVG/google-plus.svg");
+}
+.social_link-in{
+    background-image: url("../SVG/linkedin.svg");
 }
