@@ -269,7 +269,8 @@ img{
     display: grid;
     gap: var(--grid-gap);
     grid-template-columns: repeat(4, 1fr);
-    padding-top: 60px;
+    padding: 60px 0;
+    border-bottom: 1px solid #5D6544;
 }
 .footer_title{
     margin: 0;
@@ -348,4 +349,16 @@ img{
 }
 .social_link-in{
     background-image: url("../SVG/linkedin.svg");
+}
+.footer_bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+}
+.copyright{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #B5C096;
 }
