@@ -39,21 +39,21 @@ ul,li{
 }
 @font-face{
     font-family: "Poppins";
-    src: url("../fonts/Poppins-Bold.woff") format("woff");
+    src: url("fonts/Poppins-Bold.woff") format("woff");
     font-display: swap;
     font-weight: 700;
     font-style: normal;
 }
 @font-face{
     font-family: "Poppins";
-    src: url("../fonts/Poppins-Medium.woff") format("woff");
+    src: url("fonts/Poppins-Medium.woff") format("woff");
     font-display: swap;
     font-weight: 500;
     font-style: normal;
 }
 @font-face{
     font-family: "Poppins";
-    src: url("../fonts/Poppins-Regular.woff") format("woff");
+    src: url("fonts/Poppins-Regular.woff") format("woff");
     font-display: swap;
     font-weight: 400;
     font-style: normal;
@@ -77,7 +77,7 @@ img{
     cursor: pointer;
 }
 .container{
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -124,7 +124,7 @@ img{
     padding-top: 189px;
     padding-bottom: 100px;
     min-height: 811px;
-    background-image: url("../image/logo.jpg");
+    background-image: url("image/logo.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -230,7 +230,7 @@ img{
 .footer{
     color: white;
     padding-top: 310px;
-    background-image: url("../image/footer-bg.jpg");
+    background-image: url("image/footer-bg.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -339,16 +339,16 @@ img{
     align-items: center;
 }
 .social_link-fb{
-    background-image: url("../SVG/facebook-app-symbol.svg");
+    background-image: url("SVG/facebook-app-symbol.svg");
 }
 .social_link-tw{
-    background-image: url("../SVG/twitter.svg");
+    background-image: url("SVG/twitter.svg");
 }
 .social_link-g{
-    background-image: url("../SVG/google-plus.svg");
+    background-image: url("SVG/google-plus.svg");
 }
 .social_link-in{
-    background-image: url("../SVG/linkedin.svg");
+    background-image: url("SVG/linkedin.svg");
 }
 .footer_bottom{
     display: flex;
