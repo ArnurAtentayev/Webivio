@@ -362,3 +362,133 @@ img{
     line-height: 21px;
     color: #B5C096;
 }
+/*Adaptive*/
+@media (max-width: 1125px) {
+    .services_list{
+        gap:30px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .services_subtitle{
+        max-width: none;
+    }
+    .services-descr{
+        max-width: none;
+    }
+}
+@media (max-width: 1075px){
+    .footer_middle{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer_column:last-child::before{
+        display: none;
+    }
+    .get_started_title{
+        margin-bottom: 0px;
+        font-size: 55px;
+        line-height: 70px;
+    }
+    .get_started_link{
+        line-height: 20px;
+        font-size: 15px;
+    }
+    .services_link{
+        font-size: 17px;
+    }
+}
+@media (max-width: 738px) {
+    .get_started_title{
+        margin-bottom: 0px;
+        font-size: 50px;
+        line-height: 65px;
+    }
+    .get_started_link{
+        line-height: 20px;
+        font-size: 13px;
+    }
+    .services_link{
+        font-size: 16px;
+    }
+
+}
+@media (max-width: 674px){
+    .get_started_title{
+        margin-bottom: 0px;
+        font-size: 45px;
+        line-height: 60px;
+    }
+}
+@media (max-width: 523px){
+    .footer_middle{
+        grid-template-columns: repeat(1, 1fr);
+        --grid-gap: 30px;
+    }
+    .hero_title{
+        font-size: 53px;
+        line-height: 67px;
+    }
+    .hero_par{
+        font-size: 17px;
+        line-height: 25px;
+    }
+    .services_link{
+        font-size: 15px;
+    }
+    .footer_mail{
+        font-size: 22px;
+        line-height: 38px;
+    }
+    .footer_bottom{
+        flex-direction: column;
+    }
+}
+@media (max-width: 400px) {
+    .logo{
+        width: 50%;
+    }
+}
+@media (max-width: 377px){
+    .hero_title{
+        font-size: 50px;
+        line-height: 65px;
+    }
+    .hero_par{
+        font-size: 15px;
+        line-height: 23px;
+    }
+    .get_started_title{
+        margin-bottom: 0px;
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .footer_mail{
+        font-size: 20px;
+        line-height: 38px;
+    }
+    .services_link{
+        font-size: 16px;
+    }
+    .side_title{
+        line-height: 42px;
+        font-size: 33px;
+    }
+    .hero{
+        min-height: 0px;
+    }
+    .services_list{
+        gap:20px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (max-width: 316px) {
+    .hero_title{
+        font-size: 45px;
+        line-height: 60px;
+    }
+    .hero_par{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .services_link{
+        font-size: 10px;
+    }
+}
